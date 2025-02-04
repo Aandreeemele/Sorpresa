@@ -1,0 +1,54 @@
+/* Reseteo de márgenes y cuerpo centrado */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Contenedor principal adaptable */
+.container {
+    position: relative;
+    width: 90vw; /* Adaptable al ancho de la pantalla */
+    max-width: 400px; /* Máximo tamaño en pantallas grandes */
+}
+
+/* Imagen de fondo con ajuste responsivo */
+.background {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Texto sobre la imagen */
+.text {
+    position: absolute;
+    top: 50%; /* Centrado relativo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Texto en rojo */
+.highlight {
+    color: red;
+}
+
+/* 📱 Diseño responsivo */
+@media (max-width: 600px) {
+    .container {
+        max-width: 300px;
+    }
+    .text {
+        font-size: 0.9rem;
+    }
+}
