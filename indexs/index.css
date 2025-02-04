@@ -26,7 +26,7 @@ body {
 /* Texto sobre la imagen */
 .text {
     position: absolute;
-    top: 50%; /* Centrado relativo */
+    top: 65%; /* Centrado relativo */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
