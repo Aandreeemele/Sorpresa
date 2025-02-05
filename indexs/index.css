@@ -1,4 +1,4 @@
-/* Reseteo de márgenes y cuerpo centrado */
+/* Resetear márgenes y centrar contenido */
 body {
     margin: 0;
     padding: 0;
@@ -7,40 +7,103 @@ body {
     align-items: center;
     height: 100vh;
     background-color: black;
+    text-align: center;
 }
 
-/* Contenedor principal adaptable */
+/* 🔥 Ocultar secciones al inicio */
+.hidden {
+    display: none;
+}
+
+/* 💖 Sección Especial */
+.estruc {
+    width: 90vw;
+    max-width: 50rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #e6d9dd;
+}
+
+/* 📝 Frase arriba y centrada */
+.frase {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 🖼️ Imagen centrada y adaptable */
+.img1 {
+    display: flex;
+    justify-content: center;
+}
+
+.img01 {
+    width: 100%;
+    max-height: 70vh;
+    border-radius: 2rem;
+}
+
+/* 🎀 Botón centrado */
+.button1 {
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: rgb(165, 153, 177);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: rgb(140, 130, 150);
+}
+
+/* ❤️ Contenedor Romántico */
 .container {
     position: relative;
-    width: 90vw; /* Adaptable al ancho de la pantalla */
-    max-width: 400px; /* Máximo tamaño en pantallas grandes */
+    width: 90vw;
+    max-width: 400px;
 }
 
-/* Imagen de fondo con ajuste responsivo */
+/* 📷 Imagen de fondo */
 .background {
     width: 100%;
     border-radius: 10px;
-    display: block;
 }
 
-/* Texto sobre la imagen */
+/* ✨ Texto sobre la imagen */
 .text {
     position: absolute;
-    top: 65%; /* Centrado relativo */
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Texto en rojo */
 .highlight {
     color: red;
+}
+
+/* 🔙 Botón de regreso */
+.back-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* 📱 Diseño responsivo */

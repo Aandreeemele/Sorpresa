@@ -3,16 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensaje Romántico</title>
+    <title>Mi 14 de febrero</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <img src="WhatsApp Image 2025-02-04 at 5.34.37 PM.jpeg" alt="Pareja abrazándose" class="background">
-        <div class="text">
-            <p>¿Quieres ser mi 14 de febrero<br> y mi 365 días del año<br> por muchos años?</p>
-            <p class="highlight">(Porque yo sí quiero)</p>
+
+    <!-- Sección Especial (Primero visible) -->
+    <div id="especial" class="section">
+        <section class="estruc">
+            <div class="frase">"Tú haces que mi mundo sea mejor, ¡gracias por estar en él!" 💘</div>
+            <div class="img1">
+                <img src="https://i.pinimg.com/736x/31/3e/f7/313ef79af1fa789800f6fc46945a6479.jpg" alt="" class="img01">
+            </div>
+            <button onclick="showRomantico()" class="button1">Toca aquí para ver la sorpresa!</button>
+        </section>
+    </div>
+
+    <!-- Sección Romántica (Oculta al inicio) -->
+    <div id="romantico" class="section hidden">
+        <div class="container">
+            <img src="WhatsApp Image 2025-02-04 at 5.34.37 PM.jpeg" alt="Pareja abrazándose" class="background">
+            <div class="text">
+                <p>¿Quieres ser mi 14 de febrero<br> y mi 365 días del año<br> por muchos años?</p>
+                <p class="highlight">(Porque yo sí quiero)</p>
+            </div>
+            <button onclick="goBack()" class="back-button">Volver</button>
         </div>
     </div>
+
+    <script>
+        function showRomantico() {
+            document.getElementById("especial").classList.add("hidden");
+            document.getElementById("romantico").classList.remove("hidden");
+        }
+
+        function goBack() {
+            document.getElementById("romantico").classList.add("hidden");
+            document.getElementById("especial").classList.remove("hidden");
+        }
+    </script>
+
 </body>
 </html>
